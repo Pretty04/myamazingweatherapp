@@ -49,6 +49,13 @@ function displayTemperature(response) {
   
   let currentDateELement = document.querySelector("#current-date");
   let currentDate = new Date();
-  
-  currentDateELement.innerHTML = formatDate(currentDate);
-  
+currentDateELement.innerHTML = formatDate(currentDate);
+function displayForecast(){
+  let forecast = document.querySelector("#forecast")
+  forecast.innerHTML =`<div class="weather-forecast-day"><div class="weather-forecast-date">Tue</div>
+             <div class="weather-forecast-icon">⛅</div><div class="weather-forecast-temperatures">
+                 <div class="weather-forecast-temperature"><strong>15℃</strong></div>
+                 <div class="weather-forecast-temperature">9℃</div> </div></div>`
+}
+displayForecast()
+                
